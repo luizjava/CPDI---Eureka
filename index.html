@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/Style_Login.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+
+    <img src="images/cpdi.png" alt="" width="300px" height="130px" class="img_logo">
+    <div class="conteudo">
+        <img src="images/circuito_esquedo.png" alt="" width="300px" height="300px" class="img_esq">
+
+        <div class="login-container">
+
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="validateForm(); return false;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"  required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"  required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message"></p>
+        </div>
+        <img src="images/circuito_direito.png" alt="" width="300px" height="300px" class="img_dir">
+    </div>
+    <script src="js/Script_Login.js"></script>
+</body>
+
+</html>
